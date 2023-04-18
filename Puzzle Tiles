@@ -1,0 +1,27 @@
+def puzzle_tiles(width: int, height: int):
+    string = str(width), str(height)
+    
+    top = '  ' + ' _( )__' * width
+    bottom = ' |' + '__( )_|' * width
+    
+    second_line = ' _|' + '     _|' * width, '(_' + '   _ (_' * width, bottom
+    third_line = ' |_' + '     |_' * width, '  _)' + ' _   _)' * width, bottom
+    
+
+    draw_each_tile = []
+    #width 3, height 2
+    for i in range(height):
+        if i % 2 == 0:
+            draw_each_tile.append(second_line)
+        else:
+            draw_each_tile.append(third_line)
+     
+    #Iterate through each tiles' line from top to bottom
+    result = [top]
+    for tile in draw_each_tile:
+        for line in tile:
+            result.append(line)
+
+    output = '\n'.join(result)
+    
+    return output
