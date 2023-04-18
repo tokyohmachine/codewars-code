@@ -1,0 +1,14 @@
+def remove_parentheses(text):
+    if '(' not in text:
+        return text
+    
+    start = text.rfind('(') #The rfind() searches the string from right to left, 
+    #starting at the end of the string.
+    
+    #returns the index of the first occurrence of the specified substring 
+    #or -1 if the substring is not found.
+    end= text.find(')', start)
+    
+    #calling recursive function concatening the start before the opening 
+    #parenthesis with the end after the closing parenthesis
+    return remove_parentheses(text[:start] + text[end+1:])
