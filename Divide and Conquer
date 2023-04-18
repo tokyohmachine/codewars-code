@@ -1,0 +1,13 @@
+def div_con(x):
+    total_sum = 0
+    total_str = 0
+    
+    for item in x:
+        if isinstance(item, int):
+            total_sum += item
+        elif isinstance(item, str) and item.isdigit():
+            total_str += int(item)
+        elif isinstance(item, str):
+            total_str -= int(item)
+    return total_sum - total_str
+    
