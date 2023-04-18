@@ -1,0 +1,11 @@
+def descending_order(num):
+    n = str(num)
+    sorted_n = sorted(n, reverse=True)
+    reversed_n = int("".join(sorted_n))
+    return reversed_n
+    
+    
+# shorter way
+
+def descending_order(num):
+    return int("".join(sorted(str(num), reverse=True)))
