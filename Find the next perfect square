@@ -1,0 +1,8 @@
+import math
+
+# Return the next square if sq is a square, -1 otherwise
+def find_next_square(sq):
+    root = math.floor(math.sqrt(sq))
+    if sq != root*root:
+        return -1
+    return (root+1)**2
