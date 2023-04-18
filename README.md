@@ -1,5 +1,5 @@
 # Codewars Solutions
-This repository contains my solutions to various challenges on Codewars. Each solution is provided in Python.
+This repository contains my solutions to various challenges on [Codewars](https://www.codewars.com/). Each solution is provided in Python.
 
 ## How to Use
 The solutions are organized by difficulty level, and each solution is provided in its own file named after the challenge. To use these solutions, simply navigate to the appropriate file and review the code.
